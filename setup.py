@@ -20,9 +20,10 @@ setup(
     zip_safe=False,
     install_requires=[
         'MulTweet',
+        'twitter',
     ],
     entry_points="""
         [multweet]
-        twitter = multweettwitter.plugin
+        twitter = multweettwitter.plugin:TwitterPlugin
     """,
     )
