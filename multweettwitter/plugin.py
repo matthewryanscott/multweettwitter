@@ -6,6 +6,8 @@ from twitter import Twitter
 class TwitterPlugin(object):
     """Twitter plugin."""
 
+    max_message_length = 140
+
     def __init__(self, account):
         self.account = account
 
