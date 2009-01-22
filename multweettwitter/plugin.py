@@ -15,6 +15,6 @@ class TwitterPlugin(object):
         options = self.account.options
         twitter = Twitter(options['username'], options['password'])
         log(INFO, 'Posting message to twitter service...')
-        result = twitter.statuses.update(status=message)
+        result = twitter.statuses.update(status=message, source='multweet')
         log(DEBUG, 'Result is %r', result)
         log(INFO, 'Success!')
